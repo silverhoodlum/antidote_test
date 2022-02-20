@@ -1,0 +1,56 @@
+@import './../../styles/stylesheet.scss';
+
+.table-patients{
+
+    .cell-main{
+        padding: 24px;
+    }
+    .cell-btn{
+        padding-top: 24px;
+        padding-bottom: 24px;
+        width: 26%;
+    }
+    .patient-name{
+        font-weight: 600;
+        text-decoration: underline;
+        font-size: 15px;
+        color: $main_font_color;
+    }
+    .patient-address{
+        font-weight: 400;
+        color: $main_font_color;
+    }
+    .patient-contact{
+        font-weight: 400;
+        color: $main_green;
+        a{
+            color: $main_green;
+            text-decoration: none;
+        }
+    }
+    .btn{
+        text-transform: none;
+        border-radius: 18px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btn-randomized{
+        border: 2px solid $main_green;
+        color: $main_green;
+        &:hover{
+            border: 2px solid $main_green_hover;
+            background-color: $main_green_hover;
+            color: $main_background;
+        }
+    }
+    .btn-inactive{
+        border: 2px solid $inactive_color;
+        color: $inactive_color;
+        &:hover{
+            border: 2px solid $inactive_color_hover;
+            background-color: $inactive_color_hover;
+            color: $main_background;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+@import './styles/stylesheet.scss';
+
+html, body, #root, .App{
+  height: 100%;
+}
+
+.App{
+  background-color: $main_background;
+}

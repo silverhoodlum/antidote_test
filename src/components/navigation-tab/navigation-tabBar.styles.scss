@@ -1,0 +1,32 @@
+@import './../../styles/stylesheet.scss';
+
+$desktop: 840px;
+
+@mixin desktop{
+    @media (min-width: #{$desktop}){
+        @content;
+    }
+}
+
+.navigation-tabs{
+    color: $main_green;
+    .css-heg063-MuiTabs-flexContainer{
+        border-bottom: 2px solid $light_font_color;
+    }
+    .css-1aquho2-MuiTabs-indicator{
+        background-color: $main_green;
+    }
+    .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected{
+        color: $main_green;
+    }
+    button{
+        font-size: 15px;
+        text-transform: none;
+        @include desktop{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+    
+    
+}
